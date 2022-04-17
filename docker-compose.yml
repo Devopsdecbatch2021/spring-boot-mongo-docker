@@ -1,4 +1,4 @@
-version: '3'
+version: "3"
 services:
   springapp:
     image: lokeshhs591/spring-boot-mongo:1
@@ -15,8 +15,8 @@ services:
   mongo:
     image: mongo
     volumes:
-    - mongovol: /data/db
-    enviroment:
+    - mongovol:/data/db
+    environment:
     - MONGO_INITDB_USERNAME=devops
     - MONGO_INITDB_PASSWORD=devops@123
     networks:
