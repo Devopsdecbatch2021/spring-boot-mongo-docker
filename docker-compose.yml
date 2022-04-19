@@ -23,7 +23,5 @@ services:
     - springappbridge
 volumes:
   externalvolume:
-    external: true
 networks:
   springappbridge:
-    external: true
