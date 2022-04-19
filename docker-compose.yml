@@ -15,7 +15,7 @@ services:
   mongo:
     image: mongo
     volumes:
-    - mongovol:/data/db
+    - externalvolume:/data/db
     environment:
     - MONGO_INITDB_USERNAME=devops
     - MONGO_INITDB_PASSWORD=devops@123
